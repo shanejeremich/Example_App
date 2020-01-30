@@ -3,8 +3,8 @@ const express = require("express");
 const createError = require("http-errors");
 const appConfig = require("./api/appConfig");
 
-const indexRouter = require("./controllers/index");
-const usersRouter = require("./controllers/users");
+const indexRouter = require("./bin");
+const usersRouter = require("./api/routes/users");
 
 const app = express();
 
